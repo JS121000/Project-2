@@ -44,7 +44,7 @@ Analyzing the **authors** and their **books_count** can reveal the influence of 
 
 ### Genre Analysis
 
-Although the dataset does not explicitly include genre information, we can infer genres based on titles and authors’ historical works. This opens up avenues for exploring which genres are currently favored by readers and how this may correlate with ratings.
+Although the dataset does not explicitly include genre information, we can infer genres based on titles and authorsâ€™ historical works. This opens up avenues for exploring which genres are currently favored by readers and how this may correlate with ratings.
 
 ## Visualizations
 

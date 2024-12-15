@@ -61,23 +61,24 @@ def analyze_and_visualize(csv_file):
     # Visualization 1: Correlation Heatmap (if numeric columns exist)
     if len(numeric_cols) > 0:
         corr_matrix = df[numeric_cols].corr()
-        plt.figure(figsize=(10, 8))
+        plt.figure(figsize=(6, 6))  # Maintain aspect ratio; size will be scaled down later
         sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
         plt.title("Correlation Matrix")
-        plt.savefig(os.path.join(output_dir, f"{dataset_name}_correlation_matrix.png"))
+        plt.savefig(os.path.join(output_dir, f"{dataset_name}_correlation_matrix.png"), dpi=85, bbox_inches='tight')
         plt.close()
 
     # Visualization 2: Pairplot (if numeric columns exist)
     if len(numeric_cols) > 1:  # At least two numeric columns for pairplot
         sns.pairplot(df[numeric_cols])
-        plt.savefig(os.path.join(output_dir, f"{dataset_name}_pairplot.png"))
+        plt.gcf().set_size_inches(6, 6)
+        plt.savefig(os.path.join(output_dir, f"{dataset_name}_pairplot.png"), dpi=85, bbox_inches='tight')
         plt.close()
 
     # Visualization 3: Missing Values Heatmap
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(6, 6))  # Maintain aspect ratio; size will be scaled down later
     sns.heatmap(df.isnull(), cbar=False, cmap="viridis")
     plt.title("Missing Values Heatmap")
-    plt.savefig(os.path.join(output_dir, f"{dataset_name}_missing_values.png"))
+    plt.savefig(os.path.join(output_dir, f"{dataset_name}_missing_values.png"), dpi=85, bbox_inches='tight')
     plt.close()
 
     # AI-Guided Insights
@@ -117,3 +118,4 @@ if __name__ == "__main__":
 
     # Run the analysis with the given CSV file
     analyze_and_visualize(args.csv_file)
+

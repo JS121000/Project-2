@@ -37,7 +37,7 @@ The key findings from the correlation matrix include:
 
 - **Average Rating and Ratings Count**: There is a strong positive correlation between average ratings and the total number of ratings received. This suggests that books with more ratings tend to have higher average ratings, possibly due to increased visibility and credibility.
   
-- **Ratings Count and Work Ratings Count**: A high correlation exists between the number of ratings a book receives and the ratings for the work it’s part of. This indicates that popular works receive more ratings across their individual books.
+- **Ratings Count and Work Ratings Count**: A high correlation exists between the number of ratings a book receives and the ratings for the work itâ€™s part of. This indicates that popular works receive more ratings across their individual books.
 
 - **Ratings Distribution**: The analysis of ratings from 1 to 5 shows that higher average ratings correlate with higher counts of 4 and 5-star ratings, reinforcing the idea that books with better overall reception gather more positive feedback.
 

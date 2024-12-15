@@ -25,7 +25,7 @@ To understand the relationships between different metrics, we created a correlat
 - **Quality vs. Repeatability**: Moderate correlation suggests that higher quality content tends to have higher repeatability.
 - **Overall vs. Repeatability**: There was a weaker correlation, implying that while overall quality affects repeatability, it may not be the sole determining factor.
 
-![Correlation Matrix](https://via.placeholder.com/600x400?text=Correlation+Matrix+Visualization)
+
 
 ### Visualizations
 We employed various visualizations to represent the data clearly:
